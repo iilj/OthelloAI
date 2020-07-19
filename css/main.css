@@ -1,0 +1,97 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#upper-container {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lower-container {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: large;
+    margin: 1rem;
+    width: 40vw;
+    padding: 1rem;
+}
+
+table {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    width: calc(min(100vw, 60vh) - 1em);
+    height: calc(min(100vw, 60vh) - 1em);
+    font-size: calc((min(100vw, 60vh) - 1em) / 16);
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    background-color: #00aa00;
+    color: #00aa00;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.blackStone {
+    color: black;
+}
+
+td.whiteStone {
+    color: white;
+}
+
+td.header {
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+table.ai td.legalCell {
+    background-color: violet;
+    color: violet;
+}
+
+table.player td.legalCell {
+    background-color: aqua;
+    color: aqua;
+}
+
+table.player td.legalCell:hover {
+    background-color: yellow;
+    color: yellow;
+    cursor: pointer;
+}
+
+div.log {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    overflow: scroll;
+    height: 100%;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
