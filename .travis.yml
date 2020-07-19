@@ -11,8 +11,7 @@ services:
   - docker
 
 before_install:
-  - cd cpp/
   - docker run -dit --name emscripten -v $(pwd):/src trzeci/emscripten:sdk-incoming-64bit bash
 
 script:
-  - docker exec -it emscripten make
+  - docker exec -it emscripten /bin/sh -c "cd cpp && make"
