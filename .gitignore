@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# WebAssembly files
+OthelloGame.js
+OthelloGame.wasm
